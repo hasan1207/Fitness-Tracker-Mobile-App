@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textViewHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height (cm)"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHeight"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/textViewWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight (kg)"
+        android:layout_below="@id/editTextHeight"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWeight"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/textViewDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration of Workout (minutes)"
+        android:layout_below="@id/editTextWeight"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDuration"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:inputType="number"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/textViewCaloriesBurnt"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Calories Burnt"-->
+<!--        android:layout_below="@id/editTextDuration"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginStart="16dp"/>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextCaloriesBurnt"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/textViewCaloriesBurnt"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:inputType="number"/>-->
+
+
+
+    <TextView
+        android:id="@+id/textViewIntensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intensity"
+        android:layout_below="@id/editTextDuration"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerIntensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewIntensity"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerIntensity"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Calculate Water Intake"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/waterAnimationView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/textViewResult"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        app:lottie_autoPlay="true"-->
+<!--        app:lottie_fileName="water.json"-->
+<!--        app:lottie_loop="true" />-->
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<!-- bmi_progress_bar.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Underweight BMI color -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="#3576E5" />
+        </shape>
+    </item>
+
+    <!-- Normal BMI color -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <solid android:color="#43A047" />
+            </shape>
+        </clip>
+    </item>
+
+    <!-- Overweight BMI color -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape android:shape="rectangle">
+                <solid android:color="#FFA000" />
+            </shape>
+        </clip>
+    </item>
+
+    <!-- Obese BMI color -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <solid android:color="#D32F2F" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

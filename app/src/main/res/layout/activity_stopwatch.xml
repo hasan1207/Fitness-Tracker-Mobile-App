@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StopwatchActivity">
+
+    <TextView
+        android:id="@+id/stopwatchTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:text="00:00:00"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:text="Location: "
+        android:layout_below="@id/stopwatchTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Add a button to request location updates -->
+    <Button
+        android:id="@+id/getLocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Location"
+        android:layout_below="@id/locationTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_below="@id/getLocationButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:layout_below="@id/getLocationButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_toStartOf="@id/startButton"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/resetButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Reset"-->
+<!--        android:layout_below="@id/getLocationButton"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_centerHorizontal="true"/>-->
+
+    <ImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/animation4"
+        android:layout_below="@id/startButton"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".StopwatchActivity">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/stopwatchTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="60sp"-->
+<!--        android:text="00:00:00"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="20dp"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/locationTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:text="Location: "-->
+<!--        android:layout_below="@id/stopwatchTextView"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="20dp"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/startButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Start"-->
+<!--        android:layout_below="@id/locationTextView"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_alignParentEnd="true"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/stopButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Stop"-->
+<!--        android:layout_below="@id/locationTextView"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_toStartOf="@id/startButton"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/resetButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Reset"-->
+<!--        android:layout_below="@id/locationTextView"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_centerHorizontal="true"/>-->
+
+<!--</RelativeLayout>-->
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".StopwatchActivity">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/stopwatchTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="60sp"-->
+<!--        android:text="00:00:00"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="20dp"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/startButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Start"-->
+<!--        android:layout_below="@id/stopwatchTextView"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_alignParentEnd="true"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/stopButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Stop"-->
+<!--        android:layout_below="@id/stopwatchTextView"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_toStartOf="@id/startButton"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/resetButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Reset"-->
+<!--        android:layout_below="@id/stopwatchTextView"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_centerHorizontal="true"/>-->
+
+<!--</RelativeLayout>-->

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Tracking"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tracking Status"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/viewWorkoutsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Workouts"
+            android:onClick="viewWorkouts"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnOpenBmiCalculator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI Calculator"
+                android:onClick="openBmiCalculator"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnOpenWaterCalculator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Water Intake Calculator"
+                android:onClick="openWaterCalculator"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="16dp"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <Button-->
+<!--        android:id="@+id/startButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Start Tracking"-->
+<!--        android:textSize="18sp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginTop="32dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/statusTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Tracking Status"-->
+<!--        android:textSize="18sp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginTop="16dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/viewWorkoutsButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="View Workouts"-->
+<!--        android:onClick="viewWorkouts"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginTop="16dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnOpenBmiCalculator"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="BMI Calculator"-->
+<!--        android:onClick="openBmiCalculator"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginTop="32dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnOpenWaterCalculator"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Water Intake Calculator"-->
+<!--        android:onClick="openWaterCalculator"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginTop="16dp" />-->
+
+<!--</LinearLayout>-->
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <Button-->
+<!--        android:id="@+id/startButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Start Tracking"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:textSize="18sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/statusTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Tracking Status"-->
+<!--        android:layout_below="@id/startButton"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:textSize="18sp"-->
+<!--        android:layout_marginTop="20dp"/>-->
+
+
+<!--    <Button-->
+<!--        android:id="@+id/btnOpenBmiCalculator"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="63dp"-->
+<!--        android:layout_above="@+id/btnOpenWaterCalculator"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="204dp"-->
+<!--        android:layout_marginTop="481dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginBottom="-55dp"-->
+<!--        android:onClick="openBmiCalculator"-->
+<!--        android:text="BMI Calculator" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnOpenWaterCalculator"-->
+<!--        android:layout_width="178dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@+id/startButton"-->
+<!--        android:layout_marginBottom="-204dp"-->
+<!--        android:onClick="openWaterCalculator"-->
+<!--        android:text="Water Intake Calculator" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/viewWorkoutsButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="View Workouts"-->
+<!--        android:onClick="viewWorkouts"-->
+<!--        android:layout_below="@id/statusTextView"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="20dp"/>-->
+
+<!--</RelativeLayout>-->
